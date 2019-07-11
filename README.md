@@ -31,7 +31,7 @@ What type of tool would most effectively engage D.C. residents to share their op
 6. A survey: Most low-tech option, survey monkey, walk around the neighborhood and ask people, interview high schoolers nearby etc.
 
 
-##What are categories for development
+# #What are different types of development
 
 Broad topic | Specific examples
 -------|-----------
