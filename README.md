@@ -11,6 +11,11 @@ We want to hear what D.C. residents envision for the site.
 
 What type of tool would most effectively engage D.C. residents to share their opinions on how the site should be redeveloped?
 
+## Project Tools
+
+All our code and meeting notes will be kept here on GitHub. 
+You can view our project workflow [on Trello](https://trello.com/b/q5qBa7gj/rfk-project-tracking).
+
 
 ## Defining the Project
 
