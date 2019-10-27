@@ -123,3 +123,6 @@ dmypy.json
 
 #vscode
 .vscode
+
+#front-end
+.firebase/
