@@ -124,5 +124,8 @@ dmypy.json
 #vscode
 .vscode
 
+#front-end
+.firebase/
+
 #Intellij IDEA
 .idea/
