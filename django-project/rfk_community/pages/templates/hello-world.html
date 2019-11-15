@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 93vh;">
+    <center >
+        <main role="main" class="inner cover">
+            <h1 class="cover-heading">Hello World</h1>
+            <p class="lead">This page is a proof-of-concept for routing to other pages within Django</p>
+            <a style="margin-top: 15px;" href="{% url 'home' %}" class="btn btn-lg btn-primary">Route back to 'Home'</a>
+        </main>
+    </center>
+</div>
+<footer style="text-align: center;" class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Created by a team at <a href="https://codefordc.org/" target="_blank">Code for DC</a>.</p>
+    </div>
+</footer>
+{% endblock %}
