@@ -11,6 +11,7 @@ import {
 } from '@material-ui/core';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import BackgroundImagePage from './BackgroundImagePage';
+import BackgroundDOMContainer from './BackgroundDOMContainer';
 import './App.css';
 import Home from './routes/index/';
 import Why from './routes/why';
@@ -24,15 +25,14 @@ function App({ classes }) {
     <Router>
       <div className="App">
         <Nav />
-        <BackgroundImagePage>
+        <BackgroundImagePage />
+        <BackgroundDOMContainer>
           <div style={{ height: '100%' }}>
             <Route exact path="/" component={Home} />
-            <Route exact path="/why" component={Why} />
             <Route exact path="/who-are-we" component={WhoAreWe} />
             <Route exact path="/survey" component={Survey} />
           </div>
-        </BackgroundImagePage>
-        <BottomNav />
+        </BackgroundDOMContainer>
       </div>
     </Router>
   );

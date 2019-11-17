@@ -81,16 +81,6 @@ const Nav = ({ history, classes, location }) => {
           <Grid item>
             <Link
               onClick={() => {
-                history.push('/why');
-              }}
-              variant="h7"
-              className={classes.navBarSecondary}>
-              Why?
-            </Link>
-          </Grid>
-          <Grid item>
-            <Link
-              onClick={() => {
                 history.push('/who-are-we');
               }}
               variant="h7"
