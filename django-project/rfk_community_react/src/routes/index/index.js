@@ -48,7 +48,7 @@ const Home = ({ classes, history }) => {
           <Grid item xs={1} sm={3} md={5}></Grid>
           <Grid item xs={10} sm={8} md={6}>
             <Card className={classes.helperCard}>
-              <CardHeader title="What would you like built at the RFK Stadium Site?" />
+              <CardHeader title="What would you build at the RFK Stadium Site?" />
               <CardContent className={classes.cardContent}>
                 <Typography variant="body" style={{ textAlign: 'initial' }}>
                   {' '}
