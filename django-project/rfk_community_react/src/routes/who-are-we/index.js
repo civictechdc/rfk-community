@@ -19,7 +19,7 @@ const WhoAreWe = ({ classes }) => {
   return (
     <Grid container direction="column" className={classes.container}>
       <Grid container direction="row" alignItems="center" justify="center">
-        <Grid item xs={6}>
+        <Grid item xs={10} md={6}>
           <Card className={classes.helperCard}>
             <CardHeader title="We are a group of Washington DC Residents" />
             <CardContent className={classes.cardContent}>
