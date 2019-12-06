@@ -34,7 +34,7 @@ const styles = theme => ({
 
 const backablePaths = ['/survey'];
 
-const Nav = ({ history, classes, location }) => {
+const Nav = ({ history, classes, location, theme }) => {
   const [canBack, setCanBack] = useState(
     backablePaths.includes(window.location.pathname)
   );
@@ -52,7 +52,7 @@ const Nav = ({ history, classes, location }) => {
         alignItems="center"
         justify="space-between"
         className={classes.navBarInnerContainer}>
-        <Grid container direction="row" xs={6} justify="flex-start">
+        <Grid container direction="row" xs={6} s={6} justify="flex-start">
           {canBack ? (
             <>
               <IconButton
@@ -67,28 +67,13 @@ const Nav = ({ history, classes, location }) => {
               onClick={() => {
                 history.push('/');
               }}
-              variant="h6">
+              variant={window.isMobile ? 'h8' : 'h6'}>
               RFK Community Project
             </Link>
           )}
         </Grid>
-        <Grid
-          container
-          xs={6}
-          direction="row"
-          justify="flex-end"
-          style={{ right: 0 }}>
-          <Grid item>
-            <Link
-              onClick={() => {
-                history.push('/why');
-              }}
-              variant="h7"
-              className={classes.navBarSecondary}>
-              Why?
-            </Link>
-          </Grid>
-          <Grid item>
+        <Grid container xs={5} direction="row" justify="flex-end">
+          <Grid item style={{ marginRight: theme.spacing(4) }}>
             <Link
               onClick={() => {
                 history.push('/who-are-we');
@@ -98,11 +83,10 @@ const Nav = ({ history, classes, location }) => {
               Who are we?
             </Link>
           </Grid>
-          <Grid item xs={1}></Grid>
         </Grid>
       </Grid>
     </AppBar>
   );
 };
 
-export default withStyles(styles)(withRouter(Nav));
+export default withStyles(styles, { withTheme: true })(withRouter(Nav));

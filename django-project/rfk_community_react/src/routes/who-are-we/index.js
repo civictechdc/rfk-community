@@ -19,24 +19,19 @@ const WhoAreWe = ({ classes }) => {
   return (
     <Grid container direction="column" className={classes.container}>
       <Grid container direction="row" alignItems="center" justify="center">
-        <Grid item xs={6}>
+        <Grid item xs={10} md={6}>
           <Card className={classes.helperCard}>
             <CardHeader title="We are a group of Washington DC Residents" />
             <CardContent className={classes.cardContent}>
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quos
-              dolores et quas molestias excepturi sint occaecati cupiditate non
-              provident, similique sunt in culpa qui officia deserunt mollitia
-              animi, id est laborum et dolorum fuga. Et harum quidem rerum
-              facilis est et expedita distinctio. Nam libero tempore, cum soluta
-              nobis est eligendi optio cumque nihil impedit quo minus id quod
-              maxime placeat facere possimus, omnis voluptas assumenda est,
-              omnis dolor repellendus. Temporibus autem quibusdam et aut
-              officiis debitis aut rerum necessitatibus saepe eveniet ut et
-              voluptates repudiandae sint et molestiae non recusandae. Itaque
-              earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-              voluptatibus maiores alias consequatur aut perferendis doloribus
-              asperiores repellat.
+              We are a group of Washington DC residents who want to make sure
+              that the public gets a say in what happens at the RFK site.
+              Whether we build a new football stadium, houses, parks or
+              something else, we think it’s crucial that the conversation happen
+              out in the open with the full participation of the entire city. We
+              decided to build a survey tool to help kickstart that community
+              engagement and allow us to pass on the ideas and preferences of DC
+              residents to their political leaders. Help us out by taking our
+              survey and sharing it!
             </CardContent>
           </Card>
         </Grid>
