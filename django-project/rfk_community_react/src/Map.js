@@ -1,17 +1,17 @@
 // ES6
+import { isMobile } from './utils';
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl';
 import React from 'react';
-
 const Map = ReactMapboxGl({
   accessToken:
     'pk.eyJ1IjoiaGF5ZGVuYmV0dHMiLCJhIjoiY2syN2pramp3MGZnbTNibnB3ZXl0c3JjMSJ9.E-hnHmZ8WREOfhOEItLTBg',
   center: [-38.889588, -76.9731449, 17]
 });
 
-const center = window.isMobile
+const center = isMobile()
   ? [-76.96971284062391, 38.901511700204925]
   : [-76.955793, 38.889588];
-const zoom = window.isMobile ? 13 : 14;
+const zoom = isMobile() ? 13 : 14;
 const MyMap = () => {
   return (
     <Map
