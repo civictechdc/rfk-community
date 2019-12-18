@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Paper, Grid, CircularProgress } from '@material-ui/core';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
+import { isMobile } from '../../utils';
 
 const styles = theme => ({
   container: {
@@ -67,9 +68,9 @@ const Survey = ({ classes }) => {
       container
       direction="row"
       className={classes.container}
-      alignItems={loading ? 'center' : ''}>
-      <Grid item xs={1} sm={3} md={5}></Grid>
-      <Grid item xs={10} sm={8} md={6}>
+      alignItems={loading || isMobile() ? 'center' : ''}>
+      <Grid item xs={0} sm={3} md={5}></Grid>
+      <Grid item xs={12} sm={8} md={6}>
         {loading && <CircularProgress></CircularProgress>}
         <div
           id="survey-container"
