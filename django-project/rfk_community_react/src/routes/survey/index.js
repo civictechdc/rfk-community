@@ -76,7 +76,7 @@ const Survey = ({ classes }) => {
           style={{
             display: `${loading ? 'none' : 'initial'}`,
             overflowY: 'scroll',
-            height: '70vh'
+            height: '80vh'
           }}></div>
       </Grid>
     </Grid>

@@ -8,6 +8,10 @@ const Map = ReactMapboxGl({
   center: [-38.889588, -76.9731449, 17]
 });
 
+const center = window.isMobile
+  ? [-76.96971284062391, 38.901511700204925]
+  : [-76.955793, 38.889588];
+const zoom = window.isMobile ? 13 : 14;
 const MyMap = () => {
   return (
     <Map
@@ -17,8 +21,8 @@ const MyMap = () => {
         width: '100vw',
         pointerEvents: 'none'
       }}
-      zoom={[14]}
-      center={[-76.955793, 38.889588]}
+      zoom={[zoom]}
+      center={center}
       pitch={[30]}>
       <Layer type="symbol" id="marker" layout={{ 'icon-image': 'marker-15' }}>
         <Feature coordinates={[-38.889588, -76.9731449, 17]} />
