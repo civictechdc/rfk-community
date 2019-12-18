@@ -14,7 +14,8 @@ const MyMap = () => {
       style="mapbox://styles/haydenbetts/ck33byxrz1lf61cp6qzzxeep2"
       containerStyle={{
         height: '100vh',
-        width: '100vw'
+        width: '100vw',
+        pointerEvents: 'none'
       }}
       zoom={[14]}
       center={[-76.955793, 38.889588]}

@@ -12,8 +12,7 @@ const styles = theme => ({
     backgroundSize: 'cover',
     position: 'absolute',
     zIndex: 0,
-    overflow: 'hidden',
-    pointerEvents: 'none'
+    overflow: 'hidden'
   }
 });
 

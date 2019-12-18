@@ -98,7 +98,6 @@ const Home = ({ classes, history }) => {
                 </Box>
               </CardContent>
             </Card>
-            <Grid item xs={1}></Grid>
           </Grid>
         </Grid>
       </Grid>
