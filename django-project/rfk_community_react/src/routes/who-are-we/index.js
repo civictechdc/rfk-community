@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card, CardHeader, Grid, CardContent } from '@material-ui/core';
+import { Card, CardMedia, Grid, CardContent, Box, Avatar } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+import Logo from './code-for-dc-logo-text-bottom.png';
 
 const styles = theme => ({
   helperCard: {
@@ -12,6 +13,11 @@ const styles = theme => ({
   container: {
     height: '100%',
     marginTop: theme.spacing(10)
+  },
+  avatar: {
+    height: 80,
+    width: 80,
+    background: 'white'
   }
 });
 
@@ -22,22 +28,19 @@ const WhoAreWe = ({ classes }) => {
         <Grid item xs={1} sm={3} md={5}></Grid>
         <Grid item xs={10} sm={8} md={6}>
           <Card className={classes.helperCard}>
-            <CardHeader title="We are a group of Washington DC Residents" />
+            <Box mb={2} mt={2} style={{ fontSize: '1.5rem' }}>
+              Who built this survey?
+            </Box>
             <CardContent className={classes.cardContent}>
-              We are a group of Washington DC residents who want to make sure
-              that the public gets a say in what happens at the RFK site.
-              Whether we build a new football stadium, houses, parks or
-              something else, we think it’s crucial that the conversation happen
-              out in the open with the full participation of the entire city. We
-              decided to build a survey tool to help kickstart that community
-              engagement and allow us to pass on the ideas and preferences of DC
-              residents to their political leaders. Help us out by taking our
-              survey and sharing it!
+              <Box mt={1} mb={2} style={{ cursor: 'pointer' }} onClick={() => window.open('https://codefordc.org')}>
+                <img src={Logo} style={{ width: 60 }} />
+              </Box>
+              This website is a project of volunteers with Code for DC and the office of Ward 6 Councilmember Charles Allen. It is our goal to open up the conversation around the future of the RFK campus and give DC residents a voice in what the space could be used for, including the possibility of an NFL stadium, but without limiting the opportunity to build houses, parks, or more. We decided to build a survey tool to help kickstart the community engagement and conversation.
             </CardContent>
           </Card>
         </Grid>
       </Grid>
-    </Grid>
+    </Grid >
   );
 };
 
