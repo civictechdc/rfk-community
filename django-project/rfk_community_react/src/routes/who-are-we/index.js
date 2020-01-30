@@ -29,11 +29,11 @@ const WhoAreWe = ({ classes }) => {
         <Grid item xs={10} sm={8} md={6}>
           <Card className={classes.helperCard}>
             <Box mb={2} mt={2} style={{ fontSize: '1.5rem' }}>
-              Who built this survey?
+              Who made this survey?
             </Box>
             <CardContent className={classes.cardContent}>
-              <Box mt={1} mb={2} style={{ cursor: 'pointer' }} onClick={() => window.open('https://codefordc.org')}>
-                <img src={Logo} style={{ width: 60 }} />
+              <Box mb={1} style={{ cursor: 'pointer' }} onClick={() => window.open('https://codefordc.org')}>
+                <img src={Logo} style={{ width: 50 }} />
               </Box>
               This website is a project of volunteers with Code for DC and the office of Ward 6 Councilmember Charles Allen. It is our goal to open up the conversation around the future of the RFK campus and give DC residents a voice in what the space could be used for, including the possibility of an NFL stadium, but without limiting the opportunity to build houses, parks, or more. We decided to build a survey tool to help kickstart the community engagement and conversation.
             </CardContent>
